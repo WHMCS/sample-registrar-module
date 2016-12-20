@@ -1,0 +1,28 @@
+{
+    "name": "whmcs/sample-registrar-module",
+    "description": "Sample Registrar Module for WHMCS Billing Automation Platform",
+    "keywords": [
+        "whmcs",
+        "web host automation platform",
+        "registrar module",
+        "domain registrar module"
+    ],
+    "homepage": "http://www.whmcs.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WHMCS Development Team",
+            "email": "development@whmcs.com",
+            "homepage": "http://www.whmcs.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@whmcs.com",
+        "forum": "http://forums.whmcs.com/",
+        "wiki": "http://developers.whmcs.com/"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    }
+}
