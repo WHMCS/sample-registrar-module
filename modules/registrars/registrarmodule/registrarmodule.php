@@ -26,10 +26,10 @@
  *
  * For more information, please refer to the online documentation.
  *
- * @see http://developers.whmcs.com/domain-registrars/
+ * @see https://developers.whmcs.com/domain-registrars/
  *
- * @copyright Copyright (c) WHMCS Limited 2016
- * @license http://www.whmcs.com/license/ WHMCS Eula
+ * @copyright Copyright (c) WHMCS Limited 2017
+ * @license https://www.whmcs.com/license/ WHMCS Eula
  */
 
 if (!defined("WHMCS")) {
@@ -144,7 +144,7 @@ function registrarmodule_getConfigArray()
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -310,7 +310,7 @@ function registrarmodule_RegisterDomain($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -474,7 +474,7 @@ function registrarmodule_TransferDomain($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -544,7 +544,7 @@ function registrarmodule_RenewDomain($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -599,7 +599,7 @@ function registrarmodule_GetNameservers($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -660,7 +660,7 @@ function registrarmodule_SaveNameservers($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -765,7 +765,7 @@ function registrarmodule_GetContactDetails($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -846,7 +846,7 @@ function registrarmodule_SaveContactDetails($params)
  * registration or transfer.
  *
  * @param array $params common module parameters
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @see \WHMCS\Domains\DomainLookup\SearchResult
  * @see \WHMCS\Domains\DomainLookup\ResultsList
@@ -936,7 +936,7 @@ function registrarmodule_CheckAvailability($params)
  * Defines the settings relating to domain suggestions (optional).
  * It follows the same convention as `getConfigArray`.
  *
- * @see http://developers.whmcs.com/domain-registrars/check-availability/
+ * @see https://developers.whmcs.com/domain-registrars/check-availability/
  *
  * @return array of Configuration Options
  */
@@ -956,7 +956,7 @@ function registrarmodule_DomainSuggestionOptions() {
  * Provide domain suggestions based on the domain lookup term provided.
  *
  * @param array $params common module parameters
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @see \WHMCS\Domains\DomainLookup\SearchResult
  * @see \WHMCS\Domains\DomainLookup\ResultsList
@@ -1043,7 +1043,7 @@ function registrarmodule_GetDomainSuggestions($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return string|array Lock status or error message
  */
@@ -1091,7 +1091,7 @@ function registrarmodule_GetRegistrarLock($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1141,7 +1141,7 @@ function registrarmodule_SaveRegistrarLock($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array DNS Host Records
  */
@@ -1194,7 +1194,7 @@ function registrarmodule_GetDNS($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1244,7 +1244,7 @@ function registrarmodule_SaveDNS($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1301,7 +1301,7 @@ function registrarmodule_IDProtectToggle($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  *
@@ -1359,7 +1359,7 @@ function registrarmodule_GetEPPCode($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1409,7 +1409,7 @@ function registrarmodule_ReleaseDomain($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1457,7 +1457,7 @@ function registrarmodule_RequestDelete($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1511,7 +1511,7 @@ function registrarmodule_RegisterNameserver($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1565,7 +1565,7 @@ function registrarmodule_ModifyNameserver($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1619,7 +1619,7 @@ function registrarmodule_DeleteNameserver($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1671,7 +1671,7 @@ function registrarmodule_Sync($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1759,7 +1759,7 @@ function registrarmodule_ClientAreaAllowedFunctions()
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -1790,7 +1790,7 @@ function registrarmodule_push($params)
  *
  * @param array $params common module parameters
  *
- * @see http://developers.whmcs.com/domain-registrars/module-parameters/
+ * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return string HTML Output
  */

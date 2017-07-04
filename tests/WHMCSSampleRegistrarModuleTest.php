@@ -10,7 +10,7 @@
  * recommend you implement further tests as appropriate for your module use
  * case.
  *
- * @copyright Copyright (c) WHMCS Limited 2016
+ * @copyright Copyright (c) WHMCS Limited 2017
  * @license http://www.whmcs.com/license/ WHMCS Eula
  */
 

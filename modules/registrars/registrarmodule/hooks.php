@@ -15,10 +15,10 @@
  * For every hook function you create, you must also register it with WHMCS.
  * There are two ways of registering hooks, both are demonstrated below.
  *
- * @see http://developers.whmcs.com/hooks/
+ * @see https://developers.whmcs.com/hooks/
  *
  * @copyright Copyright (c) WHMCS Limited 2016
- * @license http://www.whmcs.com/license/ WHMCS Eula
+ * @license https://www.whmcs.com/license/ WHMCS Eula
  */
 
 // Require any libraries needed for the module to function.
@@ -38,7 +38,7 @@ add_hook('AdminHomeWidgets', 1, function() {
 /**
  * Sample Registrar Module Admin Dashboard Widget.
  *
- * @see http://developers.whmcs.com/addon-modules/admin-dashboard-widgets/
+ * @see https://developers.whmcs.com/addon-modules/admin-dashboard-widgets/
  */
 class SampleRegistrarModuleWidget extends \WHMCS\Module\AbstractWidget
 {

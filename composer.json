@@ -7,20 +7,20 @@
         "registrar module",
         "domain registrar module"
     ],
-    "homepage": "http://www.whmcs.com/",
+    "homepage": "https://www.whmcs.com/",
     "license": "MIT",
     "authors": [
         {
             "name": "WHMCS Development Team",
             "email": "development@whmcs.com",
-            "homepage": "http://www.whmcs.com/",
+            "homepage": "https://www.whmcs.com/",
             "role": "Developer"
         }
     ],
     "support": {
         "email": "support@whmcs.com",
-        "forum": "http://forums.whmcs.com/",
-        "wiki": "http://developers.whmcs.com/"
+        "forum": "https://forums.whmcs.com/",
+        "wiki": "https://developers.whmcs.com/"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable"
