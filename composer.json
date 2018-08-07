@@ -1,6 +1,7 @@
 {
     "name": "whmcs/sample-registrar-module",
     "description": "Sample Registrar Module for WHMCS Billing Automation Platform",
+    "type": "whmcs-registrars",
     "keywords": [
         "whmcs",
         "web host automation platform",
