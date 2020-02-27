@@ -81,55 +81,61 @@ function registrarmodule_MetaData()
  */
 function registrarmodule_getConfigArray()
 {
-    return array(
+    return [
         // Friendly display name for the module
-        'FriendlyName' => array(
+        'FriendlyName' => [
             'Type' => 'System',
             'Value' => 'Sample Registrar Module for WHMCS',
-        ),
+        ],
         // a text field type allows for single line text input
-        'API Username' => array(
+        'APIUsername' => [
+            'FriendlyName' => 'API Username',
             'Type' => 'text',
             'Size' => '25',
             'Default' => '1024',
             'Description' => 'Enter in megabytes',
-        ),
+        ],
         // a password field type allows for masked text input
-        'API Key' => array(
+        'APIKey' => [
+            'FriendlyName' => 'API Password',
             'Type' => 'password',
             'Size' => '25',
             'Default' => '',
             'Description' => 'Enter secret value here',
-        ),
+        ],
         // the yesno field type displays a single checkbox option
-        'Test Mode' => array(
+        'TestMode' => [
+            'FriendlyName' => 'Test Mode',
             'Type' => 'yesno',
             'Description' => 'Tick to enable',
-        ),
+        ],
         // the dropdown field type renders a select menu of options
-        'Account Mode' => array(
+        'AccountMode' => [
+            'FriendlyName' => 'Account Mode',
             'Type' => 'dropdown',
-            'Options' => array(
+            'Options' => [
                 'option1' => 'Display Value 1',
                 'option2' => 'Second Option',
                 'option3' => 'Another Option',
-            ),
+            ],
             'Description' => 'Choose one',
-        ),
+        ],
         // the radio field type displays a series of radio button options
-        'Email Preference' => array(
+        'EmailPreference' => [
+            'FriendlyName' => 'Email Preference',
             'Type' => 'radio',
             'Options' => 'First Option,Second Option,Third Option',
             'Description' => 'Choose your preference',
-        ),
+        ],
         // the textarea field type allows for multi-line text input
-        'Email' => array(
+        'Email' => [
+            'FriendlyName' => 'Email',
             'Type' => 'textarea',
             'Rows' => '3',
             'Cols' => '60',
             'Description' => 'Freeform multi-line text input field',
-        ),
-    );
+        ],
+    ];
 }
 
 /**
@@ -151,12 +157,11 @@ function registrarmodule_getConfigArray()
 function registrarmodule_RegisterDomain($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // registration parameters
     $sld = $params['sld'];
@@ -317,12 +322,11 @@ function registrarmodule_RegisterDomain($params)
 function registrarmodule_TransferDomain($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // registration parameters
     $sld = $params['sld'];
@@ -481,12 +485,11 @@ function registrarmodule_TransferDomain($params)
 function registrarmodule_RenewDomain($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // registration parameters
     $sld = $params['sld'];
@@ -551,12 +554,11 @@ function registrarmodule_RenewDomain($params)
 function registrarmodule_GetNameservers($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -606,12 +608,11 @@ function registrarmodule_GetNameservers($params)
 function registrarmodule_SaveNameservers($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -667,12 +668,12 @@ function registrarmodule_SaveNameservers($params)
 function registrarmodule_GetContactDetails($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
+
 
     // domain parameters
     $sld = $params['sld'];
@@ -772,12 +773,11 @@ function registrarmodule_GetContactDetails($params)
 function registrarmodule_SaveContactDetails($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -858,12 +858,11 @@ function registrarmodule_SaveContactDetails($params)
 function registrarmodule_CheckAvailability($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // availability check parameters
     $searchTerm = $params['searchTerm'];
@@ -968,12 +967,11 @@ function registrarmodule_DomainSuggestionOptions() {
 function registrarmodule_GetDomainSuggestions($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // availability check parameters
     $searchTerm = $params['searchTerm'];
@@ -1050,12 +1048,12 @@ function registrarmodule_GetDomainSuggestions($params)
 function registrarmodule_GetRegistrarLock($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
+
 
     // domain parameters
     $sld = $params['sld'];
@@ -1098,12 +1096,11 @@ function registrarmodule_GetRegistrarLock($params)
 function registrarmodule_SaveRegistrarLock($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1148,12 +1145,11 @@ function registrarmodule_SaveRegistrarLock($params)
 function registrarmodule_GetDNS($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1201,12 +1197,11 @@ function registrarmodule_GetDNS($params)
 function registrarmodule_SaveDNS($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1251,12 +1246,11 @@ function registrarmodule_SaveDNS($params)
 function registrarmodule_IDProtectToggle($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1309,12 +1303,11 @@ function registrarmodule_IDProtectToggle($params)
 function registrarmodule_GetEPPCode($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1366,12 +1359,11 @@ function registrarmodule_GetEPPCode($params)
 function registrarmodule_ReleaseDomain($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1416,12 +1408,11 @@ function registrarmodule_ReleaseDomain($params)
 function registrarmodule_RequestDelete($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1464,12 +1455,11 @@ function registrarmodule_RequestDelete($params)
 function registrarmodule_RegisterNameserver($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1518,12 +1508,11 @@ function registrarmodule_RegisterNameserver($params)
 function registrarmodule_ModifyNameserver($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1572,12 +1561,11 @@ function registrarmodule_ModifyNameserver($params)
 function registrarmodule_DeleteNameserver($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1626,12 +1614,11 @@ function registrarmodule_DeleteNameserver($params)
 function registrarmodule_Sync($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1678,12 +1665,11 @@ function registrarmodule_Sync($params)
 function registrarmodule_TransferSync($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
@@ -1766,12 +1752,11 @@ function registrarmodule_ClientAreaAllowedFunctions()
 function registrarmodule_push($params)
 {
     // user defined configuration values
-    $userIdentifier = $params['API Username'];
-    $apiKey = $params['API Key'];
-    $testMode = $params['Test Mode'];
-    $accountMode = $params['Account Mode'];
-    $emailPreference = $params['Email Preference'];
-    $additionalInfo = $params['Additional Information'];
+    $userIdentifier = $params['APIUsername'];
+    $apiKey = $params['APIKey'];
+    $testMode = $params['TestMode'];
+    $accountMode = $params['AccountMode'];
+    $emailPreference = $params['EmailPreference'];
 
     // domain parameters
     $sld = $params['sld'];
