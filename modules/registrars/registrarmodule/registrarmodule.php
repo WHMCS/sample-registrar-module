@@ -895,9 +895,9 @@ function registrarmodule_CheckAvailability($params)
             // Determine the appropriate status to return
             if ($domain['status'] == 'available') {
                 $status = SearchResult::STATUS_NOT_REGISTERED;
-            } elseif ($domain['statis'] == 'registered') {
+            } elseif ($domain['status'] == 'registered') {
                 $status = SearchResult::STATUS_REGISTERED;
-            } elseif ($domain['statis'] == 'reserved') {
+            } elseif ($domain['status'] == 'reserved') {
                 $status = SearchResult::STATUS_RESERVED;
             } else {
                 $status = SearchResult::STATUS_TLD_NOT_SUPPORTED;
