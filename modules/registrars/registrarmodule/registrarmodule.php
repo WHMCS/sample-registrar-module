@@ -578,7 +578,6 @@ function registrarmodule_GetNameservers($params)
         $api->call('GetNameservers', $postfields);
 
         return array(
-
             'ns1' => $api->getFromResponse('nameserver1'),
             'ns2' => $api->getFromResponse('nameserver2'),
             'ns3' => $api->getFromResponse('nameserver3'),
