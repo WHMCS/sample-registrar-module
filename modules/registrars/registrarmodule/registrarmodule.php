@@ -1638,7 +1638,6 @@ function registrarmodule_Sync($params)
         return array(
             'expirydate' => $api->getFromResponse('expirydate'), // Format: YYYY-MM-DD
             'active' => (bool) $api->getFromResponse('active'), // Return true if the domain is active
-            'expired' => (bool) $api->getFromResponse('expired'), // Return true if the domain has expired
             'transferredAway' => (bool) $api->getFromResponse('transferredaway'), // Return true if the domain is transferred out
         );
 
